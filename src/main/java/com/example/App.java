@@ -8,6 +8,10 @@ import javax.swing.JOptionPane;
  */
 public class App 
 {
+	
+	private static int ARRAY_SIZE;
+	private static String nombre;
+	
     public static void main( String[] args )
     {
         //como declara el array de la mejor forma.
@@ -20,6 +24,37 @@ public class App
     	
     	//para mostrar por consola los elementos del array de nombres 
     	
+    	
+    	
+    	
+    	/*Manejo de los argumentos que recibe el metodo MAIN, es decir, la app cuando se ejecuta, por que la App cuando
+    	 * se ejecuta recibe como parametro un array de argumentos de tipo string (String[] args)
+    	 * 
+    	 * ¿Donde se especifican los argumentos que recibe la app en el IDE Eclipse?
+    	 * Rta: En la configuracion de las opciones de ejecucion.*/
+    	
+    	
+    	/*//Para comprobar si el programa esta recibiendo los argumentos 
+    	if(args.length == 0 ) {
+    		System.out.println("No se han recibido los argumentos esperados");}
+    	
+    	else if (args.length != 3){
+    		System.out.println("No se han recibido tres argumentos");}
+    	else 
+    		System.out.println("ya tenemos tres o mas argumentos");
+    		for(String argumento : args)
+    			System.out.println(argumento);*/
+    		
+    	
+    		
+    		//parseInt
+    		ARRAY_SIZE = Integer.parseInt(args[1]) ; //"20"
+    		 System.out.println("El tamayño del array es : "  + ARRAY_SIZE);
+    		
+    		
+    		
+    		
+    		
     	
     	// Esta VARIANTE #1 Implica utilizar una sentencia de control de flujo
     	//para recorrer el array y lo veremos en la barra  "sentenciasdecontroldeflujo"
@@ -47,24 +82,24 @@ public class App
     	 
     	//CUANDO UTILIZAR ESTE FOR CLASICO= cuando queremos recorrer el indice y queremos recorrer un indice especificado. ejemplo:
     	 
-    	 	 for(int i = 0; i < numeros.length; i++) {
-    	 		 if (i % 2 == 0) // == es el simbolo = 
-					System.out.println("el elemento de indice " + i + ", es par");
-    	 		 else
-    	 			System.out.println("el elemento de indice " + i + ", es impar");
-    	 	 }
+    	 //	 for(int i = 0; i < numeros.length; i++) {
+    	 		// if (i % 2 == 0) // == es el simbolo = 
+					//System.out.println("el elemento de indice " + i + ", es par");
+    	 	//	 else
+    	 			//System.out.println("el elemento de indice " + i + ", es impar");
+    	 	// }
     	
     	 /* solamente mostrar los nombres que tienen mas de 4 caracteres*/
     	 
-    	 for(int i = 0; i < nombres.length; i++) {
+    	// for(int i = 0; i < nombres.length; i++) {
     		 //lengt() entre parentesis es un metodo
-    		 if (nombres[i].length() > 4) {
-    			 //System.out.println(nombres[i]);
+    	//	 if (nombres[i].length() > 4) {
+    			// System.out.println(nombres[i]);
     		 }
     		 
      		
      		
-     	 }
+     	// }
     	 
     	
     	//recorrido con FOR mejorado en ocasiones MAL llamado for each (por cada) y digo mal llamado por que la sentencia 
@@ -73,7 +108,7 @@ public class App
     	 
     	 
     	
-    }
+  //  }
 }
 
 
